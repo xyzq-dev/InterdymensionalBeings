@@ -30,7 +30,18 @@
     .iframe-container {
       width: 100%;
       max-width: 600px;
-      backdrop-filter: blur(50px); /* Apply blur effect */
+      backdrop-filter: blur(10px);
+      background: transparent; /* Make background transparent */
+      border: none; /* Remove any border */
+      border-radius: 15px; /* Adjust as needed for rounded corners */
+      overflow: hidden; /* This ensures that the iframe content also gets rounded corners */
+    }
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe border */
+      background: transparent; /* Ensure iframe background is transparent */
     }
   </style>
 </head>
